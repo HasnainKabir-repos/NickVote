@@ -56,14 +56,6 @@ A minimal Next.js web application for private nickname voting at parties. Studen
 
 ## Demo Credentials
 
-### Student Login
-- **Username**: `student1`
-- **Password**: `pass1`
-
-### Admin Login
-- **Username**: `admin`
-- **Password**: `admin123`
-
 ## Database Schema
 
 The application uses SQLite with three main tables:
