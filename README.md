@@ -127,16 +127,6 @@ nickname-voting-system/
 └── package.json           # Project dependencies
 ```
 
-## Customization
-
-### Adding More Students
-1. Edit the `students` array in `lib/database.js`
-2. Run `node setup.js` to reinitialize the database
-
-### Changing Admin Credentials
-1. Edit the admin creation section in `lib/database.js`
-2. Run `node setup.js` to reinitialize the database
-
 ### Styling
 - Modify `styles/globals.css` for visual customization
 - The design is mobile-first and responsive
@@ -148,12 +138,6 @@ Create a `.env.local` file:
 ```
 JWT_SECRET=your-secure-jwt-secret-key
 ```
-
-### Database Migration
-For production, consider migrating from SQLite to PostgreSQL:
-1. Install `pg` package: `npm install pg`
-2. Update database connection in `lib/database.js`
-3. Set database URL in environment variables
 
 ### Build and Deploy
 ```bash
@@ -168,20 +152,6 @@ npm start
 - **Input Validation**: Server-side validation prevents malicious inputs
 - **SQL Injection Protection**: Parameterized queries prevent SQL injection
 - **CSRF Protection**: SameSite cookie settings prevent CSRF attacks
-
-## Troubleshooting
-
-### Database Issues
-- Delete `database.sqlite` and run `node setup.js` again
-- Check file permissions in the project directory
-
-### Port Conflicts
-- Change the port in `package.json` scripts if 3000 is occupied
-- Use `npm run dev -- -p 3001` to run on a different port
-
-### Authentication Problems
-- Clear browser cookies and try again
-- Check that JWT_SECRET is set consistently
 
 ## Support
 
